@@ -8,12 +8,6 @@ description: 画面設計書のEVENT No採番整合性チェック。欠番・�
 ## 概要
 画面設計書のイベント記述書・項目記述書シートを対象に、EVENT No（EVENT0001形式）の採番整合性をチェックする。
 
-## 使い方
-
-`shared-agent-skills` では `scripts/run-all-check.sh` に画面設計書・テーブル定義書を渡すと、本スキルを含む s1.5 プロンプトが並列実行されます。
-
-単体で使う場合は本ディレクトリの `SKILL.md` を `~/.claude/skills/` に置き、Claude / Claude Code で Excel を読み取れるように指示してください。
-
 ## チェック内容
 1. イベント記述書の全EVENT Noを抽出（`EVENT` + 4桁の数字。表記は `EVENT0001` 等）
 2. 連番チェック: 欠番・重複を検出
